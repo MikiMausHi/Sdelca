@@ -1,0 +1,43 @@
+@import "../../../variables.scss";
+.Button {
+  font-family: Montserrat, sans-serif;
+  width: 222px;
+  height: 55px;
+  font-size: 14px;
+  color: #000000;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 1s;
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+}
+
+.primary {
+  border: none;
+  background-color: $primary;
+  &:hover:enabled {
+    background-color: darken($primary, 10%);
+  }
+}
+
+.secondary {
+  border: 3px solid $primary;
+  background-color: #fff;
+  margin-right: 36px;
+
+  &:hover {
+    border-color: darken($primary, 10%);
+    background-color: darken($primary, 10%);
+  }
+}
+
+.reject {
+  border: none;
+  background-color: $reject;
+  margin-right: 36px;
+  &:hover {
+    background-color: darken($reject, 10%);
+  }
+}

@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'a_LCDNova';
+  src: url('a_LCDNova.woff2') format('woff2'),
+  url('a_LCDNova.woff') format('woff'),
+  url('a_LCDNova.svg#a_LCDNova') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.CountDown {
+  font-family: a_LCDNova, monospace, sans-serif;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #000000;
+  font-weight: 800;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 0.7rem;
+}
+.titleSeparator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fc8a15;
+}
+
+.separator {
+  color: #fc8a15;
+}

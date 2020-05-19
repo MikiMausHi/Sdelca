@@ -1,0 +1,85 @@
+.CategorySelector {
+  margin: 30px 0;
+}
+
+.select {
+  position: relative;
+  border: 1px solid #e3e6e9;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 330px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  padding: 16px;
+  transition: border-color 0.3s ease-in;
+  span {
+    float: right;
+  }
+  &:hover {
+    border: 1px solid #41bdee;
+  }
+}
+
+.unselect {
+  border: 1px solid crimson
+}
+
+.list {
+  position: absolute;
+  left: -1px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  top: 57px;
+  width: 330px;
+  border: 1px solid #e3e6e9;
+  background-color: #ffffff;
+  z-index: 10;
+  overflow: hidden;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      color: #333333;
+      padding: 16px;
+      font-size: 18px;
+      &:hover {
+        background-color: #41bdee;
+      }
+    }
+  }
+}
+.back {
+  background-color: #bebebe;
+}
+
+.animateForward{
+  animation: listForward .5s ease-in;
+}
+.animateBackward{
+  animation: listBackward .5s ease-in;
+}
+
+
+
+@keyframes listForward {
+  0% {
+    transform: translateX(330px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes listBackward {
+  0% {
+    transform: translateX(-330px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

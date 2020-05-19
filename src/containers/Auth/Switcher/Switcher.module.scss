@@ -1,0 +1,23 @@
+.Switcher {
+  width: 100%;
+  margin-bottom: 36px;
+  display: flex;
+  // justify-content: space-around;
+  font-size: 17px;
+  line-height: 30px;
+  color: #333333;
+}
+
+.Item {
+  width: 100%;
+  text-align: center;
+  span {
+    margin: 14px 0;
+  }
+}
+
+.Active {
+  background-color: #f9a52b;
+  cursor: pointer;
+  color: #ffffff;
+}

@@ -1,0 +1,49 @@
+.Input {
+  margin-bottom: 2px;
+  width: 222px;
+  label {
+    margin-bottom: 3px;
+    padding: 0;
+    display: block;
+    font-weight: bold;
+  }
+
+  input {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #e5e5e5;
+    padding: 7px;
+    width: 100%;
+    outline: none;
+    color: #333333;
+    transition: all 0.3s ease-in-out;
+    &::-webkit-input-placeholder {
+      /* Edge */
+      color: #e5e5e5;
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #e5e5e5;
+    }
+
+    &::placeholder {
+      color: #e5e5e5;
+    }
+  }
+
+  span {
+    color: #f01f30;
+    font-size: 8px;
+    font-weight: bold;
+  }
+
+  &.invalid label {
+    color: #f01f30;
+  }
+
+  &.invalid input {
+    outline: #f01f30;
+    border-color: #f01f30;
+  }
+}

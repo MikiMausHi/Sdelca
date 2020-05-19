@@ -1,0 +1,167 @@
+@import "../../../variables.scss";
+
+.checkbox {
+  position: relative;
+}
+
+.checkboxInput {
+  display: none;
+}
+
+.labelWrapper{
+  display: flex;
+}
+
+.checkboxLabel {
+  padding-left: 29px;
+  font-size: 16px;
+  color: #333333;
+  cursor: pointer;
+  &:before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    border-radius: 2px;
+    position: absolute;
+    background-color: #dadada;
+    left: 0;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    top: -2px;
+  }
+  &:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    opacity: 0;
+    z-index: 2;
+  }
+}
+
+.leftLabel{
+  padding-left: 0;
+  padding-right: 30px;
+  &:before{
+    left: unset;
+    right:0;
+  }
+  &:after{
+    left:unset;
+    right: 0;
+  }
+
+}
+
+.checkboxInput:checked + .checkboxLabel:before {
+  background-color: $blueBox;
+}
+.checkboxInput:checked + .checkboxLabel:after {
+  opacity: 1;
+}
+
+.checkboxInput:checked + .checkboxExpertLabel:before {
+  background-color: $primary;
+}
+.checkboxInput:checked + .checkboxExpertLabel:after {
+  opacity: 1;
+}
+
+
+.checkboxInput:checked + .checkboxAuthLabel:before {
+  background-color: $primary;
+}
+
+.checkboxInput:checked + .checkboxAuthLabel:after {
+  opacity: 1;
+}
+
+.checkboxAuthLabel {
+  padding-left: 15px;
+  font-size: 9px;
+  color: #333333;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #dadada;
+    z-index: 1;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 19px;
+    left: 0;
+  }
+
+  &:after {
+    font-family: "Font Awesome 5 Free", sans-serif;
+    content: "\f00c";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7px;
+    font-weight: 600;
+    box-sizing: border-box;
+    border-radius: 2px;
+    opacity: 0;
+    z-index: 2;
+    color: white;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 19px;
+    left: 0;
+  }
+}
+
+.checkboxExpertLabel {
+  padding-left: 29px;
+  font-size: 16px;
+  color: #333333;
+  cursor: pointer;
+  &:before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    border-radius: 2px;
+    position: absolute;
+    background-color: #dadada;
+    left: 0;
+    z-index: 1;
+    width: 24px;
+    height: 24px;
+    top: -2px;
+  }
+  &:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    opacity: 0;
+    z-index: 2;
+  }
+}

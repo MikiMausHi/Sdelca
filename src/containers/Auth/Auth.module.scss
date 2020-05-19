@@ -1,0 +1,40 @@
+.Auth {
+  background-color: crimson;
+  color: #333333;
+
+  // position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wnd {
+  position: relative;
+  background-color: #fff;
+  border-radius: 22px;
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 44px;
+  z-index: 10;
+}
+
+.closebtn {
+  position: absolute;
+  color: #fff;
+  font-size: 50px;
+  right: -30px;
+  top: -40px;
+  cursor: pointer;
+}

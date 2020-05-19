@@ -1,0 +1,62 @@
+.execute-btn {
+  margin: 30px 0;
+}
+
+.section {
+  background: #ffffff;
+  box-shadow: 3.85366px 0px 23.122px rgba(0, 0, 0, 0.12);
+  border-radius: 3.85366px;
+  padding: 18px 27px;
+  margin: 2px 0;
+
+  p {
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 0.75px;
+    text-transform: capitalize;
+    color: #000000;
+    margin: 30px;
+  }
+}
+
+.photo-description {
+  font-size: 18px;
+  line-height: 22px;
+  color: #7f7f7f;
+}
+
+.upload-files-link {
+  color: #27536b;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.programs {
+  display: flex;
+  justify-content: space-around;
+  &-block {
+    display: flex;
+    align-items: center;
+  }
+}
+
+p.finish {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.3px;
+  color: #333333;
+  margin-left: 20px;
+}
+
+.reject {
+  text-align: right;
+  cursor: pointer;
+  transition: color 0.3s ease-in;
+  margin-bottom: 50px;
+  &:hover {
+    color: red;
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../../variables.scss";
+
+input.RadioGroup {
+  display: none;
+}
+
+label.RadioGroup {
+  padding-left: 29px;
+  font-size: 16px;
+  color: #333333;
+  position: relative;
+  margin-right: 24px;
+  &:before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    border: 1px solid $blueBox;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+  }
+
+  &:after {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    content: "";
+    border: 1px solid $blueBox;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background-color: $blueBox;
+    opacity: 0;
+  }
+}
+
+input.RadioGroup:checked + label.RadioGroup:after {
+  opacity: 1;
+}

@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400&display=swap");
+
+.Select {
+  width: 100%;
+  font-family: Montserrat, sans-serif;
+  font-size: 22px;
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #e3e6e9;
+  box-sizing: border-box;
+  position: relative;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  background-color: #fff;
+  background-image: url("./down.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.7em auto, 100%;
+}
+
+.Select::-ms-expand {
+  display: none;
+}
